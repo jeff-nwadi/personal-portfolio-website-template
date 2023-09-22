@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: 'Familjen Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.btn{
+    @apply shadow-md py-3 px-6 rounded-md transition duration-300;
+}
+
+.btn-green{
+    @apply bg-[#38ef7d] text-white font-bold hover:bg-[#ffff] hover:text-black;
+}
+
+.btn-white{
+    @apply bg-white text-black font-bold hover:bg-[#38ef7d] hover:text-[#ffff];
+}
+
+
+.secondary-title {
+    @apply font-bold;
+}
+
+
+.secondary-title::after {
+    content: "";
+    @apply block w-14 h-1 bg-[#38ef7d] rounded-full mt-2;
+}
+
+.card-image{
+    @apply w-16 bg-tertiary rounded-[1rem] mt-[-16%] md:mt-[-30%] lg:mt-[-35%];
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: all .20s;
+
+}
+
+.skill-card:hover{
+    transform: scale(1.05);
+    transition: all .20s;
+}
+
+
+.box:hover{
+    @apply bg-tertiary;
+    transition: ease-in .5s;
+
+}
+
+.box:hover p{
+    @apply text-black;
+}
+
+.box:hover h1{
+    @apply text-black;
+}
+
+.images:hover{
+    transform: scale(1.10);
+    transition: all .20s;
+}
+
+
+
+input::placeholder{
+    color: #f1f1f1;
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90%;
+    letter-spacing: .5px;
+}
+
+input{
+    background: #0c1d2e;
+    outline: none;
+    transition: .1s;
+    padding: 1rem 2rem;
+    color: #f1f1f1;
+}
+
+input:focus{
+    border: 1.5px solid #38ef7d;
+    transition: .2s;
+}
+
+.email-input{
+    padding: 1rem 2rem;
+}
+
+textarea{
+    outline: none;
+    padding: 1rem 1rem;
+    background: #0c1d2e;
+    color: #f1f1f1;
+}
+
+textarea::placeholder{
+    color: #f1f1f1;
+}
+
+textarea:focus{
+    border: 1.5px solid #38ef7d;
+    transition: .2s;
+}
+
+
+.social-icon{
+    color: #38ef7d;
+    border-radius: 9999px;
+    transition: ease-in-out .1s;
+    font-size: 1.5rem;
+}
+
+.social ion-icon:hover {
+    transition: ease .2s;
+    transform: translateY(-10px);
+}
